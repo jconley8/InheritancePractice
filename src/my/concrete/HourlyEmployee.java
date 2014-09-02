@@ -16,13 +16,13 @@ public class HourlyEmployee extends Employee {
     private double payRate;
     private int hoursWorked;
 
-    public HourlyEmployee(double payRate, int hoursWorked, String firstName, String lastName, int employeeId, String department) {
+    public HourlyEmployee(String firstName, String lastName, int employeeId, String department, double payRate, int hoursWorked) {
         super(firstName, lastName, employeeId, department);
         this.payRate = payRate;
         this.hoursWorked = hoursWorked;
     }
 
-    private double calculateBiWeeklyPay (double payRate, int hoursWorked) {
+    public double calculateBiWeeklyPay () {
         double amountEarned;
         double overTimeHours;
         

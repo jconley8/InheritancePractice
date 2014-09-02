@@ -15,7 +15,7 @@ public class SalariedEmployee extends Employee {
     private final int MONTHS_IN_YEAR = 12;
     private int salaryAmount;
 
-    public SalariedEmployee(int salaryAmount, String firstName, String lastName, int employeeId, String department) {
+    public SalariedEmployee(String firstName, String lastName, int employeeId, String department, int salaryAmount) {
         super(firstName, lastName, employeeId, department);
         this.salaryAmount = salaryAmount;
     }

@@ -24,12 +24,6 @@ public class Employee {
         this.department = department;
     }
 
-    public void printEmployeeDetails() {
-        System.out.println("Employee name: " + getFirstName() + " " + getLastName() +
-                           "\nID Number: " + getEmployeeId() +
-                           "\n Department: " + getDepartment());
-    }
-
     public String getFirstName() {
         return firstName;
     }
