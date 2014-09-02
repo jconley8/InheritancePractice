@@ -16,7 +16,14 @@ public class Employee {
     private String lastName;
     private int employeeId;
     private String department;
-    
+
+    public Employee(String firstName, String lastName, int employeeId, String department) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.employeeId = employeeId;
+        this.department = department;
+    }
+
     public void printEmployeeDetails() {
         System.out.println("Employee name: " + getFirstName() + " " + getLastName() +
                            "\nID Number: " + getEmployeeId() +
