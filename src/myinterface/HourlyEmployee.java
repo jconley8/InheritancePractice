@@ -22,10 +22,14 @@ public class HourlyEmployee implements Employee {
     private int hoursWorked;
 
     public HourlyEmployee(String firstName, String lastName, int employeeId, String department, double payRate, int hoursWorked) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.employeeId = employeeId;
+        this.department = department;
         this.payRate = payRate;
         this.hoursWorked = hoursWorked;
     }
-
+    
     @Override
     public double calculateBiWeeklyPay () {
         double amountEarned;
@@ -81,22 +85,18 @@ public class HourlyEmployee implements Employee {
         this.department = department;
     }
     
-    @Override
     public double getPayRate() {
         return payRate;
     }
     
-    @Override
     public void setPayRate(double payRate) {
         this.payRate = payRate;
     }
     
-    @Override
     public int getHoursWorked() {
         return hoursWorked;
     }
 
-    @Override
     public void setHoursWorked(int hoursWorked) {
         this.hoursWorked = hoursWorked;
     }    

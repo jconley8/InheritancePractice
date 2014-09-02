@@ -23,8 +23,5 @@ public interface Employee {
     public abstract void setEmployeeId(int employeeId);
     public abstract String getDepartment();
     public abstract void setDepartment(String department);
-    public abstract double getPayRate();
-    public abstract void setPayRate(double payRate);
-    public abstract int getHoursWorked();
-    public abstract void setHoursWorked(int hoursWorked);
+
 }
